@@ -1,0 +1,282 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "https:__stage-mock.apiwiz.io:443_v1_?&api_key=123&ip_address=123&fields=123",
+    "description" : "https:__stage-mock.apiwiz.io:443_v1_?&api_key=123&ip_address=123&fields=123",
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://stage-mock.apiwiz.io/"
+  } ],
+  "paths" : {
+    "/v1" : {
+      "get" : {
+        "summary" : "https:__stage-mock.apiwiz.io:443_v1_?&api_key=123&ip_address=123&fields=123",
+        "description" : "https:__stage-mock.apiwiz.io:443_v1_?&api_key=123&ip_address=123&fields=123",
+        "operationId" : "https:__stage-mock.apiwiz.io:443_v1_?&api_key=123&ip_address=123&fields=123",
+        "parameters" : [ {
+          "name" : "api_key",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "123"
+        }, {
+          "name" : "x-tenant",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "a95248ab-0f4e-448e-a090-8069c347d796"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "123"
+        }, {
+          "name" : "ip_address",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "123"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Response for endpoint GET-v1",
+            "headers" : {
+              "date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "content-length" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-envoy-upstream-service-time" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "expires" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "vary" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-frame-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-rate-limit-remaining" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "strict-transport-security" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "pragma" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-xss-protection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-content-type-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "content-type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "cache-control" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "required" : [ "city", "city_geoname_id", "connection", "continent", "continent_code", "continent_geoname_id", "country", "country_code", "country_geoname_id", "country_is_eu", "currency", "flag", "ip_address", "latitude", "longitude", "postal_code", "region", "region_geoname_id", "region_iso_code", "security", "timezone" ],
+                  "type" : "object",
+                  "properties" : {
+                    "city" : {
+                      "type" : "string"
+                    },
+                    "city_geoname_id" : {
+                      "type" : "string"
+                    },
+                    "connection" : {
+                      "required" : [ "autonomous_system_number", "autonomous_system_organization", "connection_type", "isp_name", "organization_name" ],
+                      "type" : "object",
+                      "properties" : {
+                        "autonomous_system_number" : {
+                          "type" : "string"
+                        },
+                        "autonomous_system_organization" : {
+                          "type" : "string"
+                        },
+                        "connection_type" : {
+                          "type" : "string"
+                        },
+                        "isp_name" : {
+                          "type" : "string"
+                        },
+                        "organization_name" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "continent" : {
+                      "type" : "string"
+                    },
+                    "continent_code" : {
+                      "type" : "string"
+                    },
+                    "continent_geoname_id" : {
+                      "type" : "string"
+                    },
+                    "country" : {
+                      "type" : "string"
+                    },
+                    "country_code" : {
+                      "type" : "string"
+                    },
+                    "country_geoname_id" : {
+                      "type" : "string"
+                    },
+                    "country_is_eu" : {
+                      "type" : "string"
+                    },
+                    "currency" : {
+                      "required" : [ "currency_code", "currency_name" ],
+                      "type" : "object",
+                      "properties" : {
+                        "currency_code" : {
+                          "type" : "string"
+                        },
+                        "currency_name" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "flag" : {
+                      "required" : [ "emoji", "png", "svg", "unicode" ],
+                      "type" : "object",
+                      "properties" : {
+                        "emoji" : {
+                          "type" : "string"
+                        },
+                        "png" : {
+                          "type" : "string"
+                        },
+                        "svg" : {
+                          "type" : "string"
+                        },
+                        "unicode" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "ip_address" : {
+                      "type" : "string"
+                    },
+                    "latitude" : {
+                      "type" : "string"
+                    },
+                    "longitude" : {
+                      "type" : "string"
+                    },
+                    "postal_code" : {
+                      "type" : "string"
+                    },
+                    "region" : {
+                      "type" : "string"
+                    },
+                    "region_geoname_id" : {
+                      "type" : "string"
+                    },
+                    "region_iso_code" : {
+                      "type" : "string"
+                    },
+                    "security" : {
+                      "required" : [ "is_vpn" ],
+                      "type" : "object",
+                      "properties" : {
+                        "is_vpn" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "timezone" : {
+                      "required" : [ "abbreviation", "current_time", "gmt_offset", "is_dst", "name" ],
+                      "type" : "object",
+                      "properties" : {
+                        "abbreviation" : {
+                          "type" : "string"
+                        },
+                        "current_time" : {
+                          "type" : "string"
+                        },
+                        "gmt_offset" : {
+                          "type" : "string"
+                        },
+                        "is_dst" : {
+                          "type" : "string"
+                        },
+                        "name" : {
+                          "type" : "string"
+                        }
+                      }
+                    }
+                  },
+                  "example" : "{\"city\":\"string\",\"city_geoname_id\":\"integer\",\"connection\":{\"autonomous_system_number\":\"integer\",\"autonomous_system_organization\":\"string\",\"connection_type\":\"string\",\"isp_name\":\"string\",\"organization_name\":\"string\"},\"continent\":\"string\",\"continent_code\":\"string\",\"continent_geoname_id\":\"integer\",\"country\":\"string\",\"country_code\":\"string\",\"country_geoname_id\":\"integer\",\"country_is_eu\":\"boolean\",\"currency\":{\"currency_code\":\"string\",\"currency_name\":\"string\"},\"flag\":{\"emoji\":\"string\",\"png\":\"string\",\"svg\":\"string\",\"unicode\":\"string\"},\"ip_address\":\"string\",\"latitude\":\"number\",\"longitude\":\"number\",\"postal_code\":\"string\",\"region\":\"string\",\"region_geoname_id\":\"integer\",\"region_iso_code\":\"string\",\"security\":{\"is_vpn\":\"boolean\"},\"timezone\":{\"abbreviation\":\"string\",\"current_time\":\"string\",\"gmt_offset\":\"integer\",\"is_dst\":\"boolean\",\"name\":\"string\"}}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { },
+  "x-original-swagger-version" : "2.0"
+}
